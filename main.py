@@ -1,3 +1,5 @@
+import post
+
 def main():
     while True:
         print("選択してください：")
@@ -13,7 +15,8 @@ def main():
         elif choice == "2":
             print("選択肢2が選ばれました。")
         elif choice == "3":
-            print("選択肢3が選ばれました。")
+            c = post.post_code()
+            print(c)
         elif choice == "q":
             print("プログラムを終了します。")
             break
