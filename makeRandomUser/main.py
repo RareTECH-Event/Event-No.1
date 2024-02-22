@@ -16,12 +16,14 @@ def main():
         userInput = input('>')
         if userInput == '2':
             break
-
-        user = getRandomUser()
-        print(f"名前: {user['name']['first']} {user['name']['last']}")
-        print(f"メール: {user['email']}")
-        print(f"国: {user['location']['country']}")
-        print(f"画像URL: {user['picture']['large']}")
+        elif userInput == '1':
+            user = getRandomUser()
+            print(f"名前: {user['name']['first']} {user['name']['last']}")
+            print(f"メール: {user['email']}")
+            print(f"国: {user['location']['country']}")
+            print(f"画像URL: {user['picture']['large']}")
+        else:
+            print('1か2を入力してください')
 
 if __name__ == '__main__':
     main()
